@@ -8,10 +8,10 @@
    		font-style: normal;
 }
 @font-face {
-	    font-family: 'Montserrat';
-	    src: url('montserrat.woff2') 
+	    font-family: 'montserrat';
+	    src: url('fonts/montserrat.woff2') 
 	    format('woff2'), 
-	    url('montserrat.woff')
+	    url('fonts/montserrat.woff')
 	    format('woff'),
 	    font-weight: 400;
 	    font-style: normal;
@@ -69,13 +69,12 @@ header {
 	right: 0px;
 
 	color: #e8e8e8;
-	font-family: Montserrat;
+	font-family: montserrat;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 36px;
-	text-transform: uppercase;
 	letter-spacing: -0.35px;
-
+	/*почему-то не работает шрифт, или мне так кажется, нужно разобраться*/
 	border: 1px dotted red;
 }
 
