@@ -1,26 +1,85 @@
-body { 
-	box-sizing: 			border-box;
-}
-
 @font-face {
 		font-family: airbag;
 		src: url('fonts/airbag.woff2')
 		format('woff2'),
 		url('fonts/airbag.woff')
 		format('woff');
+		font-weight: 400;
+   		font-style: normal;
+}
+@font-face {
+	    font-family: 'Montserrat';
+	    src: url('montserrat.woff2') 
+	    format('woff2'), 
+	    url('montserrat.woff')
+	    format('woff'),
+	    font-weight: 400;
+	    font-style: normal;
+}
+
+
+body { 
+	box-sizing: border-box;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background-color: #ddd;
 }
 
 .background {
-	background:				#ddd url(img/background.jpg) no-repeat center;
+	background:				url(img/background.jpg) no-repeat center;
 	min-height: 			625px;
+	max-width:				1600px;
+	margin: 				0 auto;
 }
 
 .navigation {
 	position: absolute;
+	top: 32px;
+	left: 10%;
+	right: 10%;
+	margin: 0 auto;
+
 	max-width: 1168px;
-	min-width: 450px;
+	min-width: 400px;
+	
 	border: 1px dotted red;
 }
+
+.logo {
+	position: absolute;
+	left: 0px;
+
+	text-shadow: 2px 1px 0 rgba(0, 0, 0, 0.5);
+	color: #e8e8e8;
+	font-family: Airbag;
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 36px;
+	letter-spacing: -1.2px;
+
+	border: 1px dotted red;
+}
+
+.menu {
+	position: absolute;
+	right: 0px;
+
+	color: #e8e8e8;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 36px;
+	text-transform: uppercase;
+	letter-spacing: -0.35px;
+
+	border: 1px dotted red;
+}
+
+
 
 /*.background {
 	min-height: 			750px;
