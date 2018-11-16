@@ -12,7 +12,13 @@
 	    font-weight: 400;
 	    font-style: normal;
 }
-
+@font-face {
+		font-family: 'opensans-light';
+		src: url('fonts/opensans-light.woff2') format('woff2'),
+		url('fonts/opensans-light.woff') format('woff');
+		font-weight: 300;
+		font-style: normal;
+}
 
 body { 
 	box-sizing: border-box;
@@ -26,10 +32,10 @@ header {
 }
 
 .background {
-	background:				url(img/background.jpg) no-repeat center;
-	min-height: 			625px;
-	max-width:				1600px;
-	margin: 				0 auto;
+	background:	url(img/background.jpg) no-repeat center;
+	min-height: 625px;
+	max-width: 1600px;
+	margin: 0 auto;
 }
 
 .navigation {
@@ -77,36 +83,47 @@ header {
 	margin-left: 14px;
 }
 
+.hero {
+	position: absolute;
+	max-width: 625px;
+	min-height: 182px;
+	top: 200px;
+	width: 60%;
+	left: 18%;
+	
 
-/*.background {
-	min-height: 			750px;
-	min-width: 				600px;
-	background: 			#464646 url(img/background.jpg) center fixed;
-	background-attachment:	fixed;
-	background-size:		cover;
-	margin: 				auto;
-
+	text-align: center;
+	/*margin: 0 auto;*/
 }
 
-.navigation {
-	margin: 				30px 217px;
-	border:					1px dotted red;
-	min-width: 				600px;
-	height: 				30px;
+.hero_title {
+	color: #e8e8e8;
+	font-family: montserrat;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 40px;
+	letter-spacing: -1.8px;
 }
 
-.logo	{
-	width: 					82px;
-	height: 				30px;
-	text-shadow: 			2px 1px 0 rgba(0, 0, 0, 0.5);
-	color: 					#e8e8e8;
-	font-family:			Airbag;
-	font-size: 				48px;
-	font-weight:			400;
-	line-height: 			36px;
-	text-transform: 		uppercase;
-	*/
-	/* Text style for "Z, ET" */
-	/*letter-spacing: 		-1.2px;
+.hero_body {
+	color: #e8e8e8;
+	font-family: "opensans-light";
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 25px;
+	letter-spacing: -0.42px;
 }
-*/
+
+.lets_talk_button {
+	width: 126px;
+	height: 40px;
+	border: 1px solid #f2f2f2;
+	margin: 0 auto;
+
+	color: #e8e8e8;
+	font-family: Montserrat;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 36px;
+	letter-spacing: 0.33px;
+}
