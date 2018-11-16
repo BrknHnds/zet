@@ -1,18 +1,14 @@
 @font-face {
-		font-family: airbag;
-		src: url('fonts/airbag.woff2')
-		format('woff2'),
-		url('fonts/airbag.woff')
-		format('woff');
+		font-family: 'airbag';
+		src: url('fonts/airbag.woff2') format('woff2'),
+		url('fonts/airbag.woff') format('woff');
 		font-weight: 400;
    		font-style: normal;
 }
 @font-face {
 	    font-family: 'montserrat';
-	    src: url('fonts/montserrat.woff2') 
-	    format('woff2'), 
-	    url('fonts/montserrat.woff')
-	    format('woff'),
+	    src: url('fonts/montserrat.woff2') format('woff2'), 
+	    url('fonts/montserrat.woff') format('woff');
 	    font-weight: 400;
 	    font-style: normal;
 }
@@ -53,13 +49,13 @@ header {
 	position: absolute;
 	left: 0px;
 
-	text-shadow: 2px 1px 0 rgba(0, 0, 0, 0.5);
-	color: #e8e8e8;
-	font-family: Airbag;
+	font-family: airbag;
 	font-size: 48px;
 	font-weight: 400;
 	line-height: 36px;
 	letter-spacing: -1.2px;
+	text-shadow: 2px 1px 0 rgba(0, 0, 0, 0.5);
+	color: #e8e8e8;
 
 	border: 1px dotted red;
 }
@@ -74,12 +70,11 @@ header {
 	font-weight: 400;
 	line-height: 36px;
 	letter-spacing: -0.35px;
-	/*почему-то не работает шрифт, или мне так кажется, нужно разобраться*/
 	border: 1px dotted red;
 }
 
 .devicon {
-	margin-left: 20px;
+	margin-left: 14px;
 }
 
 
