@@ -1,82 +1,85 @@
 @font-face {
-		font-family: 'airbag';
+		font-family: 'Airbag';
 		src: url('fonts/airbag.woff2') format('woff2'),
 		url('fonts/airbag.woff') format('woff');
 		font-weight: 400;
    		font-style: normal;
 }
 @font-face {
-	    font-family: 'montserrat';
+	    font-family: 'Montserrat';
 	    src: url('fonts/montserrat.woff2') format('woff2'), 
 	    url('fonts/montserrat.woff') format('woff');
 	    font-weight: 400;
 	    font-style: normal;
 }
 @font-face {
-		font-family: 'opensans-light';
+		font-family: 'Opensans-light';
 		src: url('fonts/opensans-light.woff2') format('woff2'),
 		url('fonts/opensans-light.woff') format('woff');
 		font-weight: 300;
 		font-style: normal;
 }
+@font-face {
+	    font-family: 'Montserrat';
+	    src: url('fonts/montserratbold.woff2') format('woff2'), 
+	    url('fonts/montserratbold.woff') format('woff');
+	    font-weight: 700;
+	    font-style: normal;
+}
 
-body { 
+body, p { 
 	box-sizing: border-box;
 	position: relative;
 	padding: 0;
 	margin: 0;
 }
-
-header {
-	background-color: #ddd;
+a {
+	text-decoration: none;
 }
 
-.background {
-	background:	url(img/background.jpg) no-repeat center;
+header {
+	background:	#ddd url(img/background.jpg) no-repeat center;
 	min-height: 625px;
 	max-width: 1600px;
 	margin: 0 auto;
 }
 
-.navigation {
+.container {
 	position: absolute;
 	top: 32px;
 	left: 10%;
 	right: 10%;
 	margin: 0 auto;
-
-	max-width: 1168px;
+	max-width: 1170px;
 	min-width: 400px;
-	
-	border: 1px dotted red;
 }
 
 .logo {
 	position: absolute;
 	left: 0px;
-
-	font-family: airbag;
+	font-family: Airbag;
 	font-size: 48px;
 	font-weight: 400;
 	line-height: 36px;
 	letter-spacing: -1.2px;
 	text-shadow: 2px 1px 0 rgba(0, 0, 0, 0.5);
 	color: #e8e8e8;
-
-	border: 1px dotted red;
 }
 
 .menu {
 	position: absolute;
 	right: 0px;
+}
 
+.menu_text {
+	vertical-align: 2px;
+	display: inline-block;
 	color: #e8e8e8;
-	font-family: montserrat;
+	font-family: Montserrat;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 36px;
 	letter-spacing: -0.35px;
-	border: 1px dotted red;
 }
 
 .devicon {
@@ -90,15 +93,13 @@ header {
 	top: 200px;
 	width: 60%;
 	left: 18%;
-	
-
 	text-align: center;
-	/*margin: 0 auto;*/
+
 }
 
 .hero_title {
 	color: #e8e8e8;
-	font-family: montserrat;
+	font-family: Montserrat;
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 40px;
@@ -107,7 +108,7 @@ header {
 
 .hero_body {
 	color: #e8e8e8;
-	font-family: "opensans-light";
+	font-family: "Opensans-light";
 	font-size: 17px;
 	font-weight: 300;
 	line-height: 25px;
@@ -118,12 +119,24 @@ header {
 	width: 126px;
 	height: 40px;
 	border: 1px solid #f2f2f2;
-	margin: 0 auto;
-
+	border-radius: 25px;
+	margin: 33px auto;
 	color: #e8e8e8;
 	font-family: Montserrat;
 	font-size: 13px;
 	font-weight: 700;
 	line-height: 36px;
 	letter-spacing: 0.33px;
+}
+
+.arrow {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #fff;
+	border-radius: 25px;
+	margin: 144px auto;
+}
+.arrow img {
+	vertical-align: middle;
+	margin-bottom: -25px;
 }
